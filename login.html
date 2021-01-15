@@ -23,16 +23,73 @@
         <div class="title-box"></div>
         <!-- 登录的div -->
         <div class="login-box">
-            <a href="javascript:;" id="link_reg">去注册账号</a>
+            <!-- 登录表单 -->
+            <form class="layui-form" id="form_login">
+                <!-- 1.用户名 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 2.密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 3.登录按钮 -->
+                <div class="layui-form-item">
+                    <!-- button默认type属性为submit 要不不写 要写type就为submit -->
+                    <!-- lay-submit 是一个属性 必须写 未来表单校验需要用到 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>登录</button>
+                </div>
+                <!-- 4.a链接 -->
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_reg">去注册账号</a>
+                </div>
+            </form>
         </div>
         <!-- 注册的div -->
         <div class="reg-box" style="display: none;">
-            <a href="javascript:;" id="link_login">去登录</a>
+            <!-- 注册表单 -->
+            <form class="layui-form" id="form_reg" action="">
+                <!-- 1.用户名 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 2.密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 3.再次输入密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon layui-icon-password"></i>
+                    <input type="text" name="repassword" required lay-verify="required|pwd|repwd" placeholder="请再次输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 4.注册按钮 -->
+                <div class="layui-form-item">
+                    <!-- button默认type属性为submit 要不不写 要写type就为submit -->
+                    <!-- lay-submit 是一个属性 必须写 未来表单校验需要用到 -->
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>注册</button>
+                </div>
+                <!-- 5.a链接 -->
+                <div class="layui-form-item links">
+                    <a href="javascript:;" id="link_login">去登录</a>
+                </div>
+            </form>
         </div>
     </div>
-
+    <!-- 引入layui的js代码  -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
     <!-- 引入Jquery -->
     <script src="/assets/lib/jquery.js"></script>
+    <!-- 引入baseAPI.js 在Jquery之后  -->
+    <script src="/assets/js/baseAPI.js"></script>
     <!-- 引入当前页面的js -->
     <script src="/assets/js/login.js"></script>
 
