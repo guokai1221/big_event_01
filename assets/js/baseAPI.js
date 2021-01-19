@@ -6,6 +6,7 @@ var baseURL = 'http://api-breakingnews-web.itheima.net'
 var baseURL = 'http://api-breakingnews-web.itheima.net'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 //注意 每次调用 $.get() $.post() $.ajax()的时候
 //会先调用 ajaxPrefilter 这个函数
@@ -13,6 +14,9 @@ var baseURL = 'http://api-breakingnews-web.itheima.net'
 =======
 //拦截所有ajax请求  在ajax() post() get()请求之前做的操作
 >>>>>>> index
+=======
+//拦截所有ajax请求  在ajax() post() get()请求之前做的操作
+>>>>>>> user
 //在发送ajax请求之前 对url地址进行处理 这样方便管理
 $.ajaxPrefilter(function (options) {
     // options 获取到ajax所有的参数信息
