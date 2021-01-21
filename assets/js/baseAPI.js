@@ -5,7 +5,10 @@ var baseURL = 'http://api-breakingnews-web.itheima.net'
 //生成环境服务器地址
 var baseURL = 'http://api-breakingnews-web.itheima.net'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> article
 
 //注意 每次调用 $.get() $.post() $.ajax()的时候
 //会先调用 ajaxPrefilter 这个函数
